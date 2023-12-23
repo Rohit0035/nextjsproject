@@ -35,7 +35,7 @@ const Index = () => {
             <FunFactStyleOne />
             {/* <AppointmentForm /> */}
             {/* <EmergencyArea /> */}
-            <TestimonialStyleOne />
+            {/* <TestimonialStyleOne /> */}
             {/* <NewsStyleOne /> */}
             <Subscribe />
             <Footer /> 

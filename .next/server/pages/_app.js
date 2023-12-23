@@ -1,26 +1,33 @@
 (function() {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 2888;
+exports.ids = [2888];
 exports.modules = {
 
-/***/ "./components/_App/GoTop.js":
-/*!**********************************!*\
-  !*** ./components/_App/GoTop.js ***!
-  \**********************************/
+/***/ 3588:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ GoTop; }
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\deepa\\OneDrive\\Documents\\rohit\\hotal\\nextjs\\components\\_App\\GoTop.js";
-var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
 
-class GoTop extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ _app; }
+});
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(9297);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+// EXTERNAL MODULE: ./node_modules/react-datepicker/dist/react-datepicker.css
+var react_datepicker = __webpack_require__(5994);
+;// CONCATENATED MODULE: external "next/head"
+var head_namespaceObject = require("next/head");;
+var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
+;// CONCATENATED MODULE: ./components/_App/GoTop.js
+var __jsx = (external_react_default()).createElement;
+
+class GoTop extends external_react_.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -59,61 +66,37 @@ class GoTop extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       is_visible
     } = this.state;
     return __jsx("div", {
-      className: "scroll-to-top",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40,
-        columnNumber: 13
-      }
+      className: "scroll-to-top"
     }, is_visible && __jsx("div", {
       className: "go-top",
-      onClick: () => this.scrollToTop(),
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 21
-      }
+      onClick: () => this.scrollToTop()
     }, __jsx("i", {
-      className: "bx bx-chevrons-up",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 25
-      }
+      className: "bx bx-chevrons-up"
     }), __jsx("i", {
-      className: "bx bx-chevrons-up",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 25
-      }
+      className: "bx bx-chevrons-up"
     })));
   }
 
 }
+;// CONCATENATED MODULE: ./components/_App/Preloader.js
+var Preloader_jsx = (external_react_default()).createElement;
 
-/***/ }),
 
-/***/ "./components/_App/Layout.js":
-/*!***********************************!*\
-  !*** ./components/_App/Layout.js ***!
-  \***********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+const Preloader = () => {
+  return Preloader_jsx("div", {
+    className: "loader-wrapper"
+  }, Preloader_jsx("div", {
+    className: "loader"
+  }), Preloader_jsx("div", {
+    className: "loader-section section-left"
+  }), Preloader_jsx("div", {
+    className: "loader-section section-right"
+  }));
+};
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _GoTop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GoTop */ "./components/_App/GoTop.js");
-/* harmony import */ var _Preloader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Preloader */ "./components/_App/Preloader.js");
-var _jsxFileName = "C:\\Users\\deepa\\OneDrive\\Documents\\rohit\\hotal\\nextjs\\components\\_App\\Layout.js";
-var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+/* harmony default export */ var _App_Preloader = (Preloader);
+;// CONCATENATED MODULE: ./components/_App/Layout.js
+var Layout_jsx = (external_react_default()).createElement;
 
 
 
@@ -123,191 +106,36 @@ const Layout = ({
   children
 }) => {
   // Preloader
-  const [loader, setLoader] = react__WEBPACK_IMPORTED_MODULE_0___default().useState(true);
-  react__WEBPACK_IMPORTED_MODULE_0___default().useEffect(() => {
+  const [loader, setLoader] = external_react_default().useState(true);
+  external_react_default().useEffect(() => {
     setTimeout(() => setLoader(false), 1500);
   }, []);
-  return __jsx((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, __jsx((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 13
-    }
-  }, __jsx("title", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 17
-    }
-  }, "Home"), __jsx("meta", {
+  return Layout_jsx((external_react_default()).Fragment, null, Layout_jsx((head_default()), null, Layout_jsx("title", null, "Home"), Layout_jsx("meta", {
     name: "viewport",
-    content: "width=device-width, initial-scale=1, shrink-to-fit=no",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 17
-    }
-  }), __jsx("meta", {
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+  }), Layout_jsx("meta", {
     name: "description",
-    content: "Corf - React Medical Health & Clinic Template",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 17
-    }
-  }), __jsx("meta", {
+    content: "Corf - React Medical Health & Clinic Template"
+  }), Layout_jsx("meta", {
     name: "og:title",
     property: "og:title",
-    content: "Corf - React Medical Health & Clinic Template",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 17
-    }
-  }), __jsx("meta", {
+    content: "Corf - React Medical Health & Clinic Template"
+  }), Layout_jsx("meta", {
     name: "twitter:card",
-    content: "Corf - React Medical Health & Clinic Template",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 17
-    }
-  }), __jsx("link", {
+    content: "Corf - React Medical Health & Clinic Template"
+  }), Layout_jsx("link", {
     rel: "canonical",
-    href: "https://corf-react.envytheme.com/",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 17
-    }
-  })), children, loader ? __jsx(_Preloader__WEBPACK_IMPORTED_MODULE_3__.default, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 23
-    }
-  }) : null, __jsx(_GoTop__WEBPACK_IMPORTED_MODULE_2__.default, {
+    href: "https://corf-react.envytheme.com/"
+  })), children, loader ? Layout_jsx(_App_Preloader, null) : null, Layout_jsx(GoTop, {
     scrollStepInPx: "100",
-    delayInMs: "10.50",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 13
-    }
+    delayInMs: "10.50"
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
+/* harmony default export */ var _App_Layout = (Layout);
+;// CONCATENATED MODULE: ./pages/_app.js
 
-/***/ }),
-
-/***/ "./components/_App/Preloader.js":
-/*!**************************************!*\
-  !*** ./components/_App/Preloader.js ***!
-  \**************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\deepa\\OneDrive\\Documents\\rohit\\hotal\\nextjs\\components\\_App\\Preloader.js";
-var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
-
-
-const Preloader = () => {
-  return __jsx("div", {
-    className: "loader-wrapper",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "loader",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 4
-    }
-  }), __jsx("div", {
-    className: "loader-section section-left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 4
-    }
-  }), __jsx("div", {
-    className: "loader-section section-right",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 4
-    }
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Preloader);
-
-/***/ }),
-
-/***/ "./pages/_app.js":
-/*!***********************!*\
-  !*** ./pages/_app.js ***!
-  \***********************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/css/bootstrap.min.css */ "./public/css/bootstrap.min.css");
-/* harmony import */ var _public_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _public_css_animate_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/css/animate.css */ "./public/css/animate.css");
-/* harmony import */ var _public_css_animate_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_css_animate_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _public_css_meanmenu_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/css/meanmenu.css */ "./public/css/meanmenu.css");
-/* harmony import */ var _public_css_meanmenu_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_css_meanmenu_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _public_css_boxicons_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../public/css/boxicons.min.css */ "./public/css/boxicons.min.css");
-/* harmony import */ var _public_css_boxicons_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_css_boxicons_min_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _public_css_flaticon_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../public/css/flaticon.css */ "./public/css/flaticon.css");
-/* harmony import */ var _public_css_flaticon_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_css_flaticon_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_react_modal_video_css_modal_video_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../node_modules/react-modal-video/css/modal-video.min.css */ "./node_modules/react-modal-video/css/modal-video.min.css");
-/* harmony import */ var _node_modules_react_modal_video_css_modal_video_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_react_modal_video_css_modal_video_min_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-accessible-accordion/dist/fancy-example.css */ "./node_modules/react-accessible-accordion/dist/fancy-example.css");
-/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _public_css_style_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../public/css/style.css */ "./public/css/style.css");
-/* harmony import */ var _public_css_style_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_public_css_style_css__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _public_css_responsive_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../public/css/responsive.css */ "./public/css/responsive.css");
-/* harmony import */ var _public_css_responsive_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_public_css_responsive_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_App_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/_App/Layout */ "./components/_App/Layout.js");
-var _jsxFileName = "C:\\Users\\deepa\\OneDrive\\Documents\\rohit\\hotal\\nextjs\\pages\\_app.js";
-
-var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
+var _app_jsx = (external_react_default()).createElement;
 
 
 
@@ -324,142 +152,21 @@ const MyApp = ({
   Component,
   pageProps
 }) => {
-  return __jsx(_components_App_Layout__WEBPACK_IMPORTED_MODULE_11__.default, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, __jsx(Component, _extends({}, pageProps, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 13
-    }
-  })));
+  return _app_jsx(_App_Layout, null, _app_jsx(Component, pageProps));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (MyApp);
+/* harmony default export */ var _app = (MyApp);
 
 /***/ }),
 
-/***/ "./node_modules/react-accessible-accordion/dist/fancy-example.css":
-/*!************************************************************************!*\
-  !*** ./node_modules/react-accessible-accordion/dist/fancy-example.css ***!
-  \************************************************************************/
+/***/ 5994:
 /***/ (function() {
 
 
 
 /***/ }),
 
-/***/ "./node_modules/react-datepicker/dist/react-datepicker.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-datepicker/dist/react-datepicker.css ***!
-  \*****************************************************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/react-modal-video/css/modal-video.min.css":
-/*!****************************************************************!*\
-  !*** ./node_modules/react-modal-video/css/modal-video.min.css ***!
-  \****************************************************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/animate.css":
-/*!********************************!*\
-  !*** ./public/css/animate.css ***!
-  \********************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/bootstrap.min.css":
-/*!**************************************!*\
-  !*** ./public/css/bootstrap.min.css ***!
-  \**************************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/boxicons.min.css":
-/*!*************************************!*\
-  !*** ./public/css/boxicons.min.css ***!
-  \*************************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/flaticon.css":
-/*!*********************************!*\
-  !*** ./public/css/flaticon.css ***!
-  \*********************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/meanmenu.css":
-/*!*********************************!*\
-  !*** ./public/css/meanmenu.css ***!
-  \*********************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/responsive.css":
-/*!***********************************!*\
-  !*** ./public/css/responsive.css ***!
-  \***********************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "./public/css/style.css":
-/*!******************************!*\
-  !*** ./public/css/style.css ***!
-  \******************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = require("next/head");;
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 9297:
 /***/ (function(module) {
 
 "use strict";
@@ -474,8 +181,7 @@ module.exports = require("react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
+var __webpack_exports__ = (__webpack_exec__(3588));
 module.exports = __webpack_exports__;
 
 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jb3JmLy4vY29tcG9uZW50cy9fQXBwL0dvVG9wLmpzIiwid2VicGFjazovL2NvcmYvLi9jb21wb25lbnRzL19BcHAvTGF5b3V0LmpzIiwid2VicGFjazovL2NvcmYvLi9jb21wb25lbnRzL19BcHAvUHJlbG9hZGVyLmpzIiwid2VicGFjazovL2NvcmYvLi9wYWdlcy9fYXBwLmpzIiwid2VicGFjazovL2NvcmYvZXh0ZXJuYWwgXCJuZXh0L2hlYWRcIiIsIndlYnBhY2s6Ly9jb3JmL2V4dGVybmFsIFwicmVhY3RcIiJdLCJuYW1lcyI6WyJHb1RvcCIsIkNvbXBvbmVudCIsImNvbnN0cnVjdG9yIiwicHJvcHMiLCJzdGF0ZSIsImlzX3Zpc2libGUiLCJjb21wb25lbnREaWRNb3VudCIsInNjcm9sbENvbXBvbmVudCIsImRvY3VtZW50IiwiYWRkRXZlbnRMaXN0ZW5lciIsImUiLCJ0b2dnbGVWaXNpYmlsaXR5Iiwid2luZG93IiwicGFnZVlPZmZzZXQiLCJzZXRTdGF0ZSIsInNjcm9sbFRvVG9wIiwic2Nyb2xsVG8iLCJ0b3AiLCJiZWhhdmlvciIsInJlbmRlciIsIkxheW91dCIsImNoaWxkcmVuIiwibG9hZGVyIiwic2V0TG9hZGVyIiwiUmVhY3QiLCJzZXRUaW1lb3V0IiwiUHJlbG9hZGVyIiwiTXlBcHAiLCJwYWdlUHJvcHMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBRWUsTUFBTUEsS0FBTixTQUFvQkMsNENBQXBCLENBQThCO0FBQ3pDQyxhQUFXLENBQUNDLEtBQUQsRUFBUTtBQUNmLFVBQU1BLEtBQU47QUFDQSxTQUFLQyxLQUFMLEdBQWE7QUFDVEMsZ0JBQVUsRUFBRTtBQURILEtBQWI7QUFHSDs7QUFFREMsbUJBQWlCLEdBQUc7QUFDaEIsUUFBSUMsZUFBZSxHQUFHLElBQXRCO0FBQ0FDLFlBQVEsQ0FBQ0MsZ0JBQVQsQ0FBMEIsUUFBMUIsRUFBb0MsVUFBU0MsQ0FBVCxFQUFZO0FBQzVDSCxxQkFB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LE1BQWYsRTs7Ozs7Ozs7Ozs7Ozs7OztBQ2xDQTs7QUFFQSxNQUFNTSxTQUFTLEdBQUcsTUFBTTtBQUNwQixTQUNJO0FBQUssYUFBUyxFQUFDLGdCQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDTDtBQUFLLGFBQVMsRUFBQyxRQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFESyxFQUVMO0FBQUssYUFBUyxFQUFDLDZCQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFGSyxFQUdMO0FBQUssYUFBUyxFQUFDLDhCQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFISyxDQURKO0FBT0gsQ0FSRDs7QUFVQSwrREFBZUEsU0FBZixFOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQ1pBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7O0FBRUEsTUFBTUMsS0FBSyxHQUFJLENBQUM7QUFBRTFCLFdBQUY7QUFBYTJCO0FBQWIsQ0FBRCxLQUE4QjtBQUN6QyxTQUNJLE1BQUMsNERBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQUNJLE1BQUMsU0FBRCxlQUFlQSxTQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FESixDQURKO0FBS0gsQ0FORDs7QUFRQSwrREFBZUQsS0FBZixFOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUNyQkEsdUM7Ozs7Ozs7Ozs7O0FDQUEsbUMiLCJmaWxlIjoicGFnZXMvX2FwcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tIFwicmVhY3RcIjtcblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgR29Ub3AgZXh0ZW5kcyBDb21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgICAgIHN1cGVyKHByb3BzKTtcbiAgICAgICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgICAgICAgIGlzX3Zpc2libGU6IGZhbHNlXG4gICAgICAgIH07XG4gICAgfVxuXG4gICAgY29tcG9uZW50RGlkTW91bnQoKSB7XG4gICAgICAgIHZhciBzY3JvbGxDb21wb25lbnQgPSB0aGlzO1xuICAgICAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKFwic2Nyb2xsXCIsIGZ1bmN0aW9uKGUpIHtcbiAgICAgICAgICAgIHNjcm9sbENvbXBvbmVudC50b2dnbGVWaXNpYmlsaXR5KCk7XG4gICAgICAgIH0pO1xuICAgIH1cblxuICAgIHRvZ2dsZVZpc2liaWxpdHkoKSB7XG4gICAgICAgIGlmICh3aW5kb3cucGFnZVlPZmZzZXQgPiAzMDApIHtcbiAgICAgICAgICAgIHRoaXMuc2V0U3RhdGUoe1xuICAgICAgICAgICAgICAgIGlzX3Zpc2libGU6IHRydWVcbiAgICAgICAgICAgIH0pO1xuICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7XG4gICAgICAgICAgICAgICAgaXNfdmlzaWJsZTogZmFsc2VcbiAgICAgICAgICAgIH0pO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgc2Nyb2xsVG9Ub3AoKSB7XG4gICAgICAgIHdpbmRvdy5zY3JvbGxUbyh7XG4gICAgICAgICAgICB0b3A6IDAsXG4gICAgICAgICAgICBiZWhhdmlvcjogXCJzbW9vdGhcIlxuICAgICAgICB9KTtcbiAgICB9XG5cbiAgICByZW5kZXIoKSB7XG4gICAgICAgIGNvbnN0IHsgaXNfdmlzaWJsZSB9ID0gdGhpcy5zdGF0ZTtcbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2Nyb2xsLXRvLXRvcFwiPlxuICAgICAgICAgICAgICAgIHtpc192aXNpYmxlICYmIChcbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnby10b3BcIiBvbkNsaWNrPXsoKSA9PiB0aGlzLnNjcm9sbFRvVG9wKCl9PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPSdieCBieC1jaGV2cm9ucy11cCc+PC9pPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPSdieCBieC1jaGV2cm9ucy11cCc+PC9pPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICk7XG4gICAgfVxufSAiLCJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCJcbmltcG9ydCBHb1RvcCBmcm9tICcuL0dvVG9wJ1xuaW1wb3J0IFByZWxvYWRlciBmcm9tICcuL1ByZWxvYWRlcidcblxuY29uc3QgTGF5b3V0ID0gKHsgY2hpbGRyZW4gfSkgPT4ge1xuXG4gICAgLy8gUHJlbG9hZGVyXG4gICAgY29uc3QgW2xvYWRlciwgc2V0TG9hZGVyXSA9IFJlYWN0LnVzZVN0YXRlKHRydWUpO1xuXG4gICAgUmVhY3QudXNlRWZmZWN0KCgpID0+IHtcbiAgICAgICAgc2V0VGltZW91dCgoKSA9PiBzZXRMb2FkZXIoZmFsc2UpLCAxNTAwKTtcbiAgICB9LCBbXSlcblxuICAgIHJldHVybihcbiAgICAgICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgICAgICAgPEhlYWQ+XG4gICAgICAgICAgICAgICAgPHRpdGxlPkhvbWU8L3RpdGxlPlxuICAgICAgICAgICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSwgc2hyaW5rLXRvLWZpdD1ub1wiIC8+XG4gICAgICAgICAgICAgICAgPG1ldGEgbmFtZT1cImRlc2NyaXB0aW9uXCIgY29udGVudD1cIkNvcmYgLSBSZWFjdCBNZWRpY2FsIEhlYWx0aCAmIENsaW5pYyBUZW1wbGF0ZVwiIC8+XG4gICAgICAgICAgICAgICAgPG1ldGEgbmFtZT1cIm9nOnRpdGxlXCIgcHJvcGVydHk9XCJvZzp0aXRsZVwiIGNvbnRlbnQ9XCJDb3JmIC0gUmVhY3QgTWVkaWNhbCBIZWFsdGggJiBDbGluaWMgVGVtcGxhdGVcIj48L21ldGE+XG4gICAgICAgICAgICAgICAgPG1ldGEgbmFtZT1cInR3aXR0ZXI6Y2FyZFwiIGNvbnRlbnQ9XCJDb3JmIC0gUmVhY3QgTWVkaWNhbCBIZWFsdGggJiBDbGluaWMgVGVtcGxhdGVcIj48L21ldGE+XG4gICAgICAgICAgICAgICAgPGxpbmsgcmVsPVwiY2Fub25pY2FsXCIgaHJlZj1cImh0dHBzOi8vY29yZi1yZWFjdC5lbnZ5dGhlbWUuY29tL1wiPjwvbGluaz5cbiAgICAgICAgICAgIDwvSGVhZD5cblxuICAgICAgICAgICAge2NoaWxkcmVufVxuXG4gICAgICAgICAgICB7bG9hZGVyID8gPFByZWxvYWRlciAvPiA6IG51bGx9XG4gICAgICAgIFxuICAgICAgICAgICAgPEdvVG9wIHNjcm9sbFN0ZXBJblB4PVwiMTAwXCIgZGVsYXlJbk1zPVwiMTAuNTBcIiAvPlxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiLCJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5cbmNvbnN0IFByZWxvYWRlciA9ICgpID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxvYWRlci13cmFwcGVyXCI+XG5cdFx0XHQ8ZGl2IGNsYXNzTmFtZT1cImxvYWRlclwiPjwvZGl2PlxuXHRcdFx0PGRpdiBjbGFzc05hbWU9XCJsb2FkZXItc2VjdGlvbiBzZWN0aW9uLWxlZnRcIj48L2Rpdj5cblx0XHRcdDxkaXYgY2xhc3NOYW1lPVwibG9hZGVyLXNlY3Rpb24gc2VjdGlvbi1yaWdodFwiPjwvZGl2PlxuXHRcdDwvZGl2PlxuICAgIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgUHJlbG9hZGVyXG4iLCJpbXBvcnQgJy4uL3B1YmxpYy9jc3MvYm9vdHN0cmFwLm1pbi5jc3MnXG5pbXBvcnQgJy4uL3B1YmxpYy9jc3MvYW5pbWF0ZS5jc3MnXG5pbXBvcnQgJy4uL3B1YmxpYy9jc3MvbWVhbm1lbnUuY3NzJ1xuaW1wb3J0ICcuLi9wdWJsaWMvY3NzL2JveGljb25zLm1pbi5jc3MnXG5pbXBvcnQgJy4uL3B1YmxpYy9jc3MvZmxhdGljb24uY3NzJ1xuaW1wb3J0ICcuLi9ub2RlX21vZHVsZXMvcmVhY3QtbW9kYWwtdmlkZW8vY3NzL21vZGFsLXZpZGVvLm1pbi5jc3MnXG5pbXBvcnQgJ3JlYWN0LWFjY2Vzc2libGUtYWNjb3JkaW9uL2Rpc3QvZmFuY3ktZXhhbXBsZS5jc3MnXG5pbXBvcnQgXCJyZWFjdC1kYXRlcGlja2VyL2Rpc3QvcmVhY3QtZGF0ZXBpY2tlci5jc3NcIlxuaW1wb3J0ICcuLi9wdWJsaWMvY3NzL3N0eWxlLmNzcydcbmltcG9ydCAnLi4vcHVibGljL2Nzcy9yZXNwb25zaXZlLmNzcydcblxuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL19BcHAvTGF5b3V0JztcblxuY29uc3QgTXlBcHAgPSAgKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSkgPT4ge1xuICAgIHJldHVybiAoXG4gICAgICAgIDxMYXlvdXQ+XG4gICAgICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XG4gICAgICAgIDwvTGF5b3V0PlxuICAgIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgTXlBcHAiLCJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJuZXh0L2hlYWRcIik7OyIsIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcInJlYWN0XCIpOzsiXSwic291cmNlUm9vdCI6IiJ9

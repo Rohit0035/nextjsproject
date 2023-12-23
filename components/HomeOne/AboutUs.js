@@ -40,7 +40,7 @@ const AboutUs = () => {
             <div className="about-img">
               <div className="single-contact-map">
                 <img
-                  src="https://bttc.com.au/wp-content/uploads/2020/12/home_1.jpg.webp"
+                  src="/img/about/home_1.jpg"
                   alt="Image"
                 />
               </div>
@@ -63,7 +63,7 @@ const AboutUs = () => {
             <div className="about-img">
               <div className="single-contact-map">
                 <img
-                  src="https://bttc.com.au/wp-content/uploads/2020/11/badminton-player-talking-to-his-teammates-8VAFRLP-scaled.jpg"
+                  src="/img/about/badminton-player.jpg"
                   alt="Image"
                 />
               </div>

@@ -15,7 +15,7 @@ const FooterBook = () => {
           width: "100%",
           color: "#000",
           textAlign: "center",
-          padding: "20px 0px;",
+          padding: "20px 0px",
           backgroundColor:'#fff',
           zIndex:'999999'
         }}

@@ -57,7 +57,7 @@ const About = () => {
             <div className="col-lg-6">
               <div className="about-img">
                 <img
-                  src="https://bttc.com.au/wp-content/uploads/2020/12/700x467.jpg.webp"
+                  src="/img/about/700x467.jpg"
                   alt="Image"
                 />
               </div>

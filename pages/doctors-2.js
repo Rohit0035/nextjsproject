@@ -31,7 +31,7 @@ const Doctors2 = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-doctors-two">
                 <div className="doctor-img">
-                  <img src="https://bttc.com.au/wp-content/uploads/2020/11/clayton.jpg" alt="Image" />
+                  <img src="/img/about/clayton.jpg" alt="Image" />
 
                   <ul className="doctors-link">
                                         <li>
@@ -67,7 +67,7 @@ const Doctors2 = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-doctors-two">
                 <div className="doctor-img">
-                  <img src="https://bttc.com.au/wp-content/uploads/2020/11/noble.jpg" alt="Image" />
+                  <img src="/img/about/noble.jpg" alt="Image" />
 
                   <ul className="doctors-link">
                     <li>
@@ -103,7 +103,7 @@ const Doctors2 = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-doctors-two">
                 <div className="doctor-img">
-                  <img src="https://bttc.com.au/wp-content/uploads/2020/11/hallam.jpg" alt="Image" />
+                  <img src="/img/about/hallam.jpg" alt="Image" />
 
                   <ul className="doctors-link">
                     <li>
@@ -139,7 +139,7 @@ const Doctors2 = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-doctors-two">
                 <div className="doctor-img">
-                  <img src="https://bttc.com.au/wp-content/uploads/2020/11/triguna.jpg" alt="Image" />
+                  <img src="/img/about/triguna.jpg" alt="Image" />
 
                   <ul className="doctors-link">
                     <li>
