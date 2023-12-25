@@ -115,14 +115,14 @@ const Layout = ({
     content: "width=device-width, initial-scale=1, shrink-to-fit=no"
   }), Layout_jsx("meta", {
     name: "description",
-    content: "Corf - React Medical Health & Clinic Template"
+    content: "Sport theme"
   }), Layout_jsx("meta", {
     name: "og:title",
     property: "og:title",
-    content: "Corf - React Medical Health & Clinic Template"
+    content: "Sport theme"
   }), Layout_jsx("meta", {
     name: "twitter:card",
-    content: "Corf - React Medical Health & Clinic Template"
+    content: "Sport theme"
   }), Layout_jsx("link", {
     rel: "canonical",
     href: "https://corf-react.envytheme.com/"

@@ -17,9 +17,9 @@ const Layout = ({ children }) => {
             <Head>
                 <title>Home</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <meta name="description" content="Corf - React Medical Health & Clinic Template" />
-                <meta name="og:title" property="og:title" content="Corf - React Medical Health & Clinic Template"></meta>
-                <meta name="twitter:card" content="Corf - React Medical Health & Clinic Template"></meta>
+                <meta name="description" content="Sport theme" />
+                <meta name="og:title" property="og:title" content="Sport theme"></meta>
+                <meta name="twitter:card" content="Sport theme"></meta>
                 <link rel="canonical" href="https://corf-react.envytheme.com/"></link>
             </Head>
 
