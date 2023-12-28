@@ -8,9 +8,10 @@ import 'react-accessible-accordion/dist/fancy-example.css'
 import "react-datepicker/dist/react-datepicker.css"
 import '../public/css/style.css'
 import '../public/css/responsive.css'
-
 import Layout from '../components/_App/Layout';
-
+import '@rmcooper/next-fullcalendar/common/main.css'
+import '@rmcooper/next-fullcalendar/daygrid/main.css'
+import '@rmcooper/next-fullcalendar/timegrid/main.css'
 const MyApp =  ({ Component, pageProps }) => {
     return (
         <Layout>

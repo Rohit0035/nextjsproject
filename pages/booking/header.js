@@ -23,7 +23,7 @@ const header = () => {
             <div className="main-nav">
               <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
-                  <Link href="/">
+                  <Link href="/booking/dashboard">
                     <a onClick={toggleNavbar} className="navbar-brand">
                       {/* <img src="/img/logo.png" alt="logo" width="280px"/>  */}
                       <h3 style={{ fontSize: "25px" }}>Logo</h3>
@@ -48,9 +48,9 @@ const header = () => {
                   <div className={classOne} id="navbarSupportedContent">
                     <ul className="navbar-nav" style={{ marginRight: "auto" }}>
                       <li className="nav-item">
-                        <Link href="/" activeClassName="active">
+                        <Link href="/booking/overview" activeClassName="active">
                           <a onClick={toggleNavbar} className="nav-link">
-                            User Name 
+                            UserName 
                           </a>
                         </Link>
                       </li>
@@ -65,14 +65,14 @@ const header = () => {
 
                         <ul className="dropdown-menu">
                           <li className="nav-item">
-                            <Link href="/about" activeClassName="active">
+                            <Link href="/booking/accountoverview" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 Overview
                               </a>
                             </Link>
                           </li>
                           <li className="nav-item">
-                            <Link href="/about" activeClassName="active">
+                            <Link href="/booking/invoiceindex" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 Invoices
                               </a>
@@ -90,21 +90,21 @@ const header = () => {
 
                         <ul className="dropdown-menu">
                           <li className="nav-item">
-                            <Link href="/about" activeClassName="active">
+                            <Link href="/booking/calendar" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 Make a Booking
                               </a>
                             </Link>
                           </li>
                           <li className="nav-item">
-                            <Link href="/about" activeClassName="active">
+                            <Link href="/booking/futurebooking" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 View Future Bookings
                               </a>
                             </Link>
                           </li>
                           <li className="nav-item">
-                            <Link href="/about" activeClassName="active">
+                            <Link href="/booking/pastbooking" activeClassName="active">
                               <a onClick={toggleNavbar} className="nav-link">
                                 View Past Bookings
                               </a>
@@ -115,7 +115,7 @@ const header = () => {
 
                       <li className="nav-item">
                         <Link
-                          href="/badmintonfeatures"
+                          href="/booking/membership"
                           activeClassName="active"
                         >
                           <a onClick={toggleNavbar} className="nav-link">
@@ -125,7 +125,7 @@ const header = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link href="/bookfeatures" activeClassName="active">
+                        <Link href="#" activeClassName="active">
                           <a onClick={toggleNavbar} className="nav-link">
                             About
                           </a>

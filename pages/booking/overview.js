@@ -1,10 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Nav from "./header";
 import Header from "./header";
 import FooterBook from "./footer";
 import Home from "./home";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Container, Row, Col, Button, Card, Form } from "react-bootstrap";
 import {
   Accordion,
   AccordionItem,
@@ -12,8 +12,13 @@ import {
   AccordionItemPanel,
   AccordionItemButton,
 } from "react-accessible-accordion";
+import Modal from "react-bootstrap/Modal";
 
 const Overview = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div className="main-div">
@@ -77,7 +82,11 @@ const Overview = () => {
                 </Accordion>
               </Col>
               <Col lg="6">
-                <Accordion allowZeroExpanded preExpanded={["c"]} className="mt-3">
+                <Accordion
+                  allowZeroExpanded
+                  preExpanded={["c"]}
+                  className="mt-3"
+                >
                   <AccordionItem uuid="c">
                     <AccordionItemHeading>
                       <AccordionItemButton style={{ textAlign: "left" }}>
@@ -108,9 +117,10 @@ const Overview = () => {
                   <div className="d-flex">
                     <h6 className="mt-2">Sub-accounts</h6>
                     <Button
+                      onClick={handleShow}
                       size="sm"
                       className="default-btn"
-                      style={{ marginLeft: "auto",padding:'10px' }}
+                      style={{ marginLeft: "auto", padding: "10px" }}
                     >
                       <i className="bx bx-plus"></i> New
                     </Button>
@@ -122,6 +132,64 @@ const Overview = () => {
         </div>
         <FooterBook />
       </div>
+      {/* modal Add  */}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Create New Contact</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Row>
+              <Col lg="12" className="mb-2">
+                <label>First Name</label>
+                <input
+                  text="text"
+                  className="form-control"
+                  placeholder="First Name"
+                />
+              </Col>
+              <Col lg="12" className="mb-2">
+                <label>Last Name</label>
+                <input
+                  text="text"
+                  className="form-control"
+                  placeholder="Last Name"
+                />
+              </Col>
+              <Col md="12" className="mb-2">
+                <label>Date of Birth</label>
+                <input type="date" className="form-control" placeholder="DOB" />
+              </Col>
+              <Col md="12">
+                <label>Gender</label>
+                {["radio"].map((type) => (
+                  <div key={`default-${type}`} className="mb-3">
+                    <Form.Check // prettier-ignore
+                      type={type}
+                      id={`default-${type}`}
+                      label={`Male`}
+                    />
+
+                    <Form.Check
+                      type={type}
+                      label={`Female`}
+                      id={`default-${type}`}
+                    />
+                  </div>
+                ))}
+              </Col>
+            </Row>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Submit
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };
