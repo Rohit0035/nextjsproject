@@ -154,7 +154,7 @@ const Calendar = () => {
                 </div>
               </Col>
               <Col lg="9">
-                <h5 className="mb-2">Lorem Sports Centre</h5>
+                <h5 className="mb-2">Lorem Sports Centres</h5>
                 <BadmintonSchedule/>
               </Col>
             </Row>
